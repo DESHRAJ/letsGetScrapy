@@ -10,7 +10,7 @@ from django.contrib.auth.views import login, logout
 from django.contrib.auth.models import User
 # import settings
 # import allot.urls
-from progen.urls import * 
+from scrapy.urls import * 
 from django.contrib import admin
 admin.autodiscover()
 
@@ -18,7 +18,11 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
-    # url(r'^$', 'scrapy.views.home', name='home'),
+    url(r'^$', 'scrapy.views.home', name='home'),
+    url(r'collages', 'scrapy.views.collages', name='collages'),
+    url(r'greeting', 'scrapy.views.greeting', name='greeting'),
+    url(r'photograph', 'scrapy.views.photograph', name='photograph'),
+    url(r'scrapbook', 'scrapy.views.scrapbook', name='scrapbook'),
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
