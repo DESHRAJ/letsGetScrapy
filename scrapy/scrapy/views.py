@@ -22,8 +22,8 @@ def home(request):
 		name = request.POST['name']
 		message = request.POST['message']
 		email = request.POST['email']
-		send_mail(name + "    " + email, message,"letsgetscrapy@gmail.com","<aakashchandhoke.24@gmail.com>", fail_silently=False)
-	return render_to_response('index.html')
+		send_mail(name + "    " + email, message,"letsgetscrapy@gmail.com","aakashchandhoke.24@gmail.com".split(' '), fail_silently=False)
+	return render_to_response('index.html',context_instance=RequestContext(request))
 
 def greeting(request):
 	return render_to_response('greeting.html')
