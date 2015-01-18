@@ -23,6 +23,7 @@ urlpatterns = patterns('',
     url(r'greeting', 'scrapy.views.greeting', name='greeting'),
     url(r'photograph', 'scrapy.views.photograph', name='photograph'),
     url(r'scrapbook', 'scrapy.views.scrapbook', name='scrapbook'),
+    url(r'finalstep', 'scrapy.views.finalstep', name='finalstep'),
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),

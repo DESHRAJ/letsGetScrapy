@@ -36,3 +36,6 @@ def scrapbook(request):
 
 def photograph(request):
 	return render_to_response('photograph.html')
+
+def finalstep(request):
+	return render_to_response('laststep.html')
