@@ -286,7 +286,7 @@
 				display: block;
 				width: 100%;
 				padding: 0.65em 0.75em;
-				background: none;
+				background:none;
 				border: solid 2px rgba(185,186,187,0.25);
 				color: inherit;
 				border-radius: 0.5em;
@@ -534,42 +534,51 @@
 				.main.style1 h2 {
 					font-size: 4.5em;
 					line-height: 1em;
-                    font-family: "lobster";
+                    font-family: 'Marck Script', cursive;
 					letter-spacing: -4px;
                     color: black;
 				}
+#smalls{
+    transform: translateZ(0);
+    opacity: 1.0;
+    width: 900px;
+    margin-bottom: 0px;
+    margin-left: -74px;
+    
+}
                   #scrap {
-					font-size: 9em;
+					font-size: 7em;
 					line-height: 1em;
-                    font-family: "lobster";
+                    font-family: 'Playfair Display', serif;
 					letter-spacing: -4px;
-                    color: black;
+                    color: white;
+                      padding-bottom: -294px;
 				}
                  #pos {
 					font-size: 6em;
 					line-height: 1em;
-                    font-family: "lobster";
+                    font-family: 'Playfair Display', serif;
 					letter-spacing: -4px;
                     color: white;
 				}
                 #greet {
 					font-size: 5em;
 					line-height: 1em;
-                    font-family: "Times New Roman";
+                    font-family: 'Playfair Display', serif;
 					letter-spacing: -4px;
-                    color: white;
+                    color:rgb(36, 38, 155);
 				}
                 #photo {
-					font-size: 10em;
+					font-size: 5em;
 					line-height: 1em;
-                    font-family: "Times New Roman";
+                    font-family: 'Playfair Display', serif;
 					letter-spacing: -4px;
-                    color: white;
+                    margin-left: 450px;
+                    color: black;
 				}
 				
 				.main.style1 .content {
 					opacity: 1.0;
-
 					-moz-transition: all 1s ease;
 					-webkit-transition: all 1s ease;
 					-o-transition: all 1s ease;
@@ -754,6 +763,8 @@
 
 	#logo {
 		position: absolute;
+        margin-top: 0px;
+        font-size: larger;
 		left: 1em;
 		top: 0;
 		height: 3em;
@@ -798,7 +809,7 @@
 /*********************************************************************************/
 
 	#intro {
-		<!--background: url('images/overlay.png'), url('../images/intro.jpg')-->;
+		background: url('images/overlay.png'), url('../images/one.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -811,7 +822,27 @@
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
 	}
-
+#introc {
+		background: url('images/overlay.png'), url('../images/cal1.png');
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, bottom center;
+		background-repeat: repeat, no-repeat;
+	}
+#introco {
+		background: url('images/overlay.png'), url('../images/greet1.png');
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, bottom center;
+		background-repeat: repeat, no-repeat;
+	}
+#introg {
+		background: url('images/overlay.png'), url('../images/poster1.png');
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, bottom center;
+		background-repeat: repeat, no-repeat;
+	}
 /*********************************************************************************/
 /* One                                                                           */
 /*********************************************************************************/
@@ -822,8 +853,26 @@
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
+#oneg {
+		background: url('images/overlay.png'), url('../images/poster2.png');
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
 #ones {
 		background: url('images/overlay.png'), url('../images/scrappy2.png');
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+#oneco {
+		background: url('images/overlay.png'), url('../images/greet2.png');
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+#onec {
+		background: url('images/overlay.png'), url('../images/cal2.png');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -1182,14 +1231,14 @@
 /****************************************************
 /form group
 /*************************************************/
-div,span,form {
+form {
     margin: 0px;
     padding: 0px;
     border: 0px none;
     font: inherit;
     vertical-align: baseline;
 }
-.contact-form span {
+<!--.contact-form span {
     display: block;
     color: #555;
     text-shadow: 0px 1px 0px #FFF;
@@ -1203,4 +1252,4 @@ div,span,form {
 .contact_right {
     float: left;
     width: 63.3333%;
-}
+}-->

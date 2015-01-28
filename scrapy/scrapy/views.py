@@ -22,20 +22,26 @@ def home(request):
 		name = request.POST['name']
 		message = request.POST['message']
 		email = request.POST['email']
-		send_mail(name + "    " + email, message,"letsgetscrapy@gmail.com","aakashchandhoke.24@gmail.com".split(' '), fail_silently=False)
+		send_mail(email, name+ "\n" + message,"scrappy0089@gmail.com","scrappy0089@gmail.com".split(' '), fail_silently=False)
 	return render_to_response('index.html',context_instance=RequestContext(request))
 
-def greeting(request):
+def greetings(request):
 	return render_to_response('greeting.html')
 
-def collages(request):
+def collage(request):
 	return render_to_response('collages.html')
 
 def scrapbook(request):
 	return render_to_response('scrapbook.html')
 
-def photograph(request):
-	return render_to_response('photograph.html')
+def calendar(request):
+	return render_to_response('calendar.html')
 
-def finalstep(request):
-	return render_to_response('laststep.html')
+def faq(request):
+	return render_to_response('faq.html')
+
+def about(request):
+	return render_to_response('aboutus.html')
+
+def form(request):
+	return render_to_response('form.html')

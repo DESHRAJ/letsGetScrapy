@@ -17,13 +17,16 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
+    # (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
     url(r'^$', 'scrapy.views.home', name='home'),
-    url(r'collages', 'scrapy.views.collages', name='collages'),
-    url(r'greeting', 'scrapy.views.greeting', name='greeting'),
-    url(r'photograph', 'scrapy.views.photograph', name='photograph'),
+    url(r'collage', 'scrapy.views.collage', name='collage'),
+    url(r'greetings', 'scrapy.views.greetings', name='greetings'),
+    url(r'calendar', 'scrapy.views.calendar', name='calendar'),
     url(r'scrapbook', 'scrapy.views.scrapbook', name='scrapbook'),
-    url(r'finalstep', 'scrapy.views.finalstep', name='finalstep'),
+    url(r'faq', 'scrapy.views.faq', name='faq'),
+    url(r'about', 'scrapy.views.about', name='about'),
+    url(r'form', 'scrapy.views.form', name='form'),
+    
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),

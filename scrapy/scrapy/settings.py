@@ -106,7 +106,14 @@ STATICFILES_DIRS = (
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'deshrajdry@gmail.com'
-# EMAIL_HOST_PASSWORD = 'LOL'
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_USER = 'scrappy0089@gmail.com'
+EMAIL_HOST_PASSWORD = '05322642402'
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    "django.contrib.auth.context_processors.auth",
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.core.context_processors.static",
+    "django.contrib.messages.context_processors.messages",)
