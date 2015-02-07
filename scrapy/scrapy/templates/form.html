@@ -71,7 +71,7 @@
     <section class="container-fluid" id="ass">
         <h1 id="forum">Contact us to Order</h1>
       <div class="mainContainer" id="asa">
-        <form role="form" method="post" action="/thankyou">
+        <form role="form" method="post" action="/thankyou" enctype="multipart/form-data"s>
         {% csrf_token %}
           <div class="form-group" id="aa">
             <label class="control-label" for="name">Name</label>
@@ -87,12 +87,12 @@
           </div>
           <div class="form-group">
             <label class="control-label" for="product">Product</label>
-            <select>
-                <option name="options" value="">Select</option>
-                <option name="options" value="Scrapbook">Scrapbook</option>
-                <option name="options" value="Calendar">Calendar</option>
-                <option name="options" value="Greeting cards">Greeting cards</option>
-                <option name="options" value="Poster collage">Poster collage</option>
+            <select name="selectone" >
+                <option value="">Select</option>
+                <option value="Scrapbook">Scrapbook</option>
+                <option value="Calendar">Calendar</option>
+                <option value="Greeting cards">Greeting cards</option>
+                <option value="Poster collage">Poster collage</option>
             </select>
           </div>
             <div class="form-group">

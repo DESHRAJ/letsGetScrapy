@@ -56,9 +56,9 @@ def thankyou(request):
 		name = request.POST['name']
 		email = request.POST['email']
 		phno = request.POST['phno']
-		options = request.POST['options']
 		quantity = request.POST['quantity']
 		comment = request.POST['comment']
+		options = request.POST["selectone"]
 		send_mail("PRODUCT ORDER"," name: "+ name+"\n" + "email: "+ email+"\n"+ "phno:"+phno+"\n"+ "options:"+options+"\n"+ "quantity:"+quantity+"\n"+ "comment:"+comment+"\n","scrappy0089@gmail.com","scrappy0089@gmail.com".split(' '), fail_silently=False)
 	return render_to_response('thankyou.html',context_instance=RequestContext(request))
 
