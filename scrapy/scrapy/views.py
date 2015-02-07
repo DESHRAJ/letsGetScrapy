@@ -50,6 +50,17 @@ def about(request):
 	""" View for the about page """
 	return render_to_response('aboutus.html')
 
-def form(request):
+def thankyou(request):
 	""" View for the registration form page """
-	return render_to_response('form.html')
+	if request.POST:
+		name = request.POST['name']
+		email = request.POST['email']
+		phno = request.POST['phno']
+		options = request.POST['options']
+		quantity = request.POST['quantity']
+		comment = request.POST['comment']
+		send_mail("PRODUCT ORDER"," name: "+ name+"\n" + "email: "+ email+"\n"+ "phno:"+phno+"\n"+ "options:"+options+"\n"+ "quantity:"+quantity+"\n"+ "comment:"+comment+"\n","scrappy0089@gmail.com","scrappy0089@gmail.com".split(' '), fail_silently=False)
+	return render_to_response('thankyou.html',context_instance=RequestContext(request))
+
+def form(request):
+	return render_to_response('form.html',context_instance=RequestContext(request))
